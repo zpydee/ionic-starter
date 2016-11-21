@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { TempPage } from '../';
+
 /*
   Generated class for the Home page.
 
@@ -17,6 +19,10 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('Hello HomePage Page');
+  }
+
+  gotoTempPage() {
+    this.navCtrl.push(TempPage);
   }
 
 }
