@@ -5,9 +5,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start" : "npm run ionic:serve",
+    "start": "npm run ionic:serve",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve --lab"
+    "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/common": "2.1.1",
