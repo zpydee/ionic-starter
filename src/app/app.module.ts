@@ -4,7 +4,9 @@ import { MyApp } from './app.component';
 import {
   HomePage,
   SettingsPage,
-  TempPage
+  UsersPage,
+  UserDetailPage,
+  AppSettingsPage
 } from '../pages';
 
 @NgModule({
@@ -12,7 +14,9 @@ import {
     MyApp,
     HomePage,
     SettingsPage,
-    TempPage
+    UsersPage,
+    UserDetailPage,
+    AppSettingsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -22,7 +26,9 @@ import {
     MyApp,
     HomePage,
     SettingsPage,
-    TempPage
+    UsersPage,
+    UserDetailPage,
+    AppSettingsPage
   ],
   providers: []
 })

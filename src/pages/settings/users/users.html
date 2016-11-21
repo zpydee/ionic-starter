@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>users</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+    <button ion-item *ngFor="let user of users" (click)="gotoUser($event, user)">
+      <ion-icon name="contact"></ion-icon>&nbsp;{{user.firstName}} {{user.lastName}}
+      </button>
+  </ion-list>
+</ion-content>
