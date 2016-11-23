@@ -1,13 +1,11 @@
 <ion-header>
-
-  <ion-navbar color="primary">
-    <ion-title>User Details</ion-title>
-  </ion-navbar>
-
+  <ion-navbar></ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-  <button ion-button color="secondary" (click)="goBack()">BACK</button>
+  <button ion-button clear color="secondary" (click)="goBack()">
+    <ion-icon name="arrow-back"></ion-icon>
+    BACK TO LIST
+    </button>
   <h1>{{user.firstName}} {{user.lastName}}</h1>
 </ion-content>

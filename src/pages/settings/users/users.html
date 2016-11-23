@@ -1,16 +1,13 @@
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>users</ion-title>
-  </ion-navbar>
-
+  <ion-navbar></ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-<ion-list>
+  <h2>User Management</h2>
+  <ion-list>
     <button ion-item *ngFor="let user of users" (click)="gotoUser($event, user)">
-      <ion-icon name="contact"></ion-icon>&nbsp;{{user.firstName}} {{user.lastName}}
+      <ion-icon name="contact"></ion-icon>
+      {{user.firstName}} {{user.lastName}}
       </button>
   </ion-list>
 </ion-content>

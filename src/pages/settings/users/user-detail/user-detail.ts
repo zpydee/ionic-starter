@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { OnInit } from '@angular/core';
 
 /*
   Generated class for the UserDetail page.
@@ -12,7 +11,7 @@ import { OnInit } from '@angular/core';
   selector: 'page-user-detail',
   templateUrl: 'user-detail.html'
 })
-export class UserDetailPage implements OnInit {
+export class UserDetailPage{
 
   user: any;
 
@@ -20,12 +19,12 @@ export class UserDetailPage implements OnInit {
     public navCtrl: NavController,
     private navParams: NavParams) {}
 
+  ionViewWillLoad(){
+    this.user = this.navParams.data;
+
+  }
   ionViewDidLoad() {
     console.log('Hello UserDetailPage Page');
-  }
-
-  ngOnInit() {
-    this.user = this.navParams.data;
   }
 
   goBack() {
